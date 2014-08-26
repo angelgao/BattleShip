@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE022BBF-FF08-46BA-A06C-3DB09670A407}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VuongD_GaoA_BattleshipFinalProject</RootNamespace>
+    <AssemblyName>VuongD_GaoA_BattleshipFinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBattlefield.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattlefield.designer.cs">
+      <DependentUpon>frmBattlefield.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeployment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeployment.designer.cs">
+      <DependentUpon>frmDeployment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLobby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLobby.designer.cs">
+      <DependentUpon>frmLobby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewServer.designer.cs">
+      <DependentUpon>frmNewServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShop.designer.cs">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStats.Designer.cs">
+      <DependentUpon>frmStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateNew.designer.cs">
+      <DependentUpon>frmCreateNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVictory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVictory.designer.cs">
+      <DependentUpon>frmVictory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicVariables.cs" />
+    <EmbeddedResource Include="frmBattlefield.resx">
+      <DependentUpon>frmBattlefield.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeployment.resx">
+      <DependentUpon>frmDeployment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLobby.resx">
+      <DependentUpon>frmLobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewServer.resx">
+      <DependentUpon>frmNewServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShop.resx">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStats.resx">
+      <DependentUpon>frmStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateNew.resx">
+      <DependentUpon>frmCreateNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVictory.resx">
+      <DependentUpon>frmVictory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battleship-poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\186361.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigpreview_Universal Battleship Twitter Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigpreview_Universal Battleship Twitter Background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weapon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weapon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weapon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taken.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messageface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messageblank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainweap.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
