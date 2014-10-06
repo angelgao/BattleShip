@@ -53,10 +53,11 @@ namespace VuongD_GaoA_BattleshipFinalProject
 
         private void frmDeployment_Load(object sender, EventArgs e)
         {
+            //Starting point for where the grid should be generated
             int intX = 60;
             int intY = 110;
 
-            // generate 10 x 10 grid
+            // generate 10 x 10 grid of pictureboxes where ships can be placed
             for (int i = 0; i < 10; i++)
             {
                 for (int j = 0; j < 10; j++)
@@ -74,7 +75,7 @@ namespace VuongD_GaoA_BattleshipFinalProject
             }
         }
 
-        //manipulation of picture boxes
+        //manipulation of picture boxes, moving the ships to follow the cursor
         private PictureBox movePic;
         private PictureBox selectedPic;
 
@@ -90,6 +91,7 @@ namespace VuongD_GaoA_BattleshipFinalProject
             xPos = movePic.Location.X;
             yPos = movePic.Location.Y;
 
+            // Does not allow the ship to be dragged anywhere outside the grid
             if (PointToClient(System.Windows.Forms.Cursor.Position).X > xPos && PointToClient(System.Windows.Forms.Cursor.Position).X < xPos + movePic.Width && PointToClient(System.Windows.Forms.Cursor.Position).Y > yPos && PointToClient(System.Windows.Forms.Cursor.Position).Y < yPos + movePic.Height)
             {
                 xOffset = PointToClient(System.Windows.Forms.Cursor.Position).X - xPos;
